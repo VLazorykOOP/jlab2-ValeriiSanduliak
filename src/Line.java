@@ -51,26 +51,4 @@ public class Line {
         }
         return r;
     }
-
-
-    public static void Task3() {
-        Line line1 = new Line(2, 3, -8);
-        Line line2 = new Line(-3, 2, 7);
-        double x =1;
-        double y =2;
-        System.out.println("Point {"+x+","+y+"} constrains line1 : "+line1.contains(x, y));
-        System.out.println("Line 1 : "+line1.toString());
-        System.out.println("Line 2 : "+line2.toString());
-        double[] intersectionPoint = line1.Intersection(line2);
-        if (intersectionPoint == null) {
-            System.out.println("Lines are parallel");
-        } else {
-            System.out.println("Crossing point: (" + intersectionPoint[0] + ", " + intersectionPoint[1] + ")");
-        }
-        if(line1.equals(line2)){
-            System.out.println("Equals");
-        }
-        else System.out.println("Not equals");
-
-    }
 }
