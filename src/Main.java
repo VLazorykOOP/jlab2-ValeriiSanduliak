@@ -34,13 +34,12 @@ public class Main {
         System.out.print("Input s2 : ");
         String s2 = in.nextLine();
         VeryLongNumber p1 = new VeryLongNumber(s1);
-        System.out.println("p1: "+p1.toString());
         VeryLongNumber p2 = new VeryLongNumber(s2);
-        System.out.println("p2: "+p2.toString());
         System.out.print("p1  add p2 : "+p1.add(p2)+"\n");
         System.out.print("p1  sub p2 : "+p1.subtract(p2)+"\n");
         System.out.print("p1  multiply p2: "+p1.multiply(p2)+"\n");
-        System.out.print("p1  divide p2: "+p1.divide(p2)+"\n");
+        VeryLongNumber quotient = p1.divide(p2);
+        System.out.print("p1  divide p2: "+quotient+"\n");
         System.out.print("p1  pow 12: "+p1.pow(12)+"\n");
         System.out.print("p2  pow 13: "+p2.pow(13)+"\n");
         if(p1.equals(p2)){
@@ -94,7 +93,6 @@ public class Main {
                 case 3: Task3() ;break;
                 case 4: return;
             }
-
         }
 
     }
